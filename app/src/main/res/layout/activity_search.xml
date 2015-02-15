@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".SearchActivity"
+    android:id="@+id/activity_search">
+    <!--
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSearchQuery"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/search_query_hint"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:layout_toStartOf="@+id/btnSearch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_string"
+        android:id="@+id/btnSearch"
+        android:layout_alignBottom="@+id/etSearchQuery"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    -->
+    <!--<GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gvSearchResult"
+        android:numColumns="3"
+        android:choiceMode="singleChoice"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:layout_alignParentBottom="true" />
+        -->
+
+    <com.etsy.android.grid.StaggeredGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_margin="4dp"
+        app:column_count="3" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbSearchProgress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.suraj.androidgoogleimagesearch.FullImageActivity">
+    <item
+        android:id="@+id/action_share"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Share"
+        app:actionProviderClass=
+            "android.support.v7.widget.ShareActionProvider" />
+
+    <item
+        android:id="@+id/action_browse"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_browse"
+        android:title="Browse" />
+
+</menu>
