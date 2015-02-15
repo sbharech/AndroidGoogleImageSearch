@@ -32,4 +32,4 @@ Additionally, user can open the actual site in the browswer.
 
 The demo video:
 
-
+![imagesearchdemo](https://cloud.githubusercontent.com/assets/2020366/6204388/50407670-b56f-11e4-8ba0-0aa7a922280e.gif)
